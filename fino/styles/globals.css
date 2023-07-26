@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.letras-negro{
+  color:black;
+}
+
+button {
+  margin: 0%;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust the height as needed */
+}
+
+.h1-login{
+  justify-content: center;
+  align-items: center;
+  font-size: 300%;
+}
+
+.centrar-fino{
+  display: flex;
+  justify-content: center;
+  font-size: 400%;
+  font-family: sans-serif;
+}
+
+.div-expandible {
+  width: 50%; /* Ancho inicial del div */
+  height: 0; /* Alto inicial del div */
+  overflow: hidden; /* Oculta el contenido que exceda las dimensiones del div */
+  transition: width 0.3s, height 0.3s; /* Transiciones suaves de animación */
+  background-color: #3f3f41; /* Color de fondo para todos los botones */
+  color: #ffffff; /* Color del texto para todos los botones */
+}
+
+.div-expandible.expandido {
+  width: auto; /* Ancho expandido del div */
+  height: auto; /* Alto auto del div para expandirse según el contenido */
+  background-color: #3f3f41; /* Color de fondo para todos los botones */
+  color: #ffffff; /* Color del texto para todos los botones */
+}
+
+.contenido {
+  padding: 0%; /* Espacio interno del contenido del div */
+}
+
+.imagen-fondo {
+  background-image: url('./descarga.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta real de tu imagen */
+  background-color: rgb(27, 27, 27); /* Color gris */
+  background-blend-mode: multiply; /* Mezcla el color de fondo con la imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Usa el 100% del viewport height */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.derecha-grafico {
+  margin-top: -1%;
+  float: right;
+  margin-right: 5%;
+}
+
+.relleno-div{
+  font-size: 140%;
+  background-color: rgba(54, 54, 54, 0.205);
+  margin-right: 60%;
+  margin-left:  3%;
+  margin-top: 6%;
+}
+
+.derecha-bienvenido{
+  margin-right: 3%;
+  float: right;
+  font-size: 200%;
+  margin-top: -3%;
+}
+
+.invisible{
+  display: none;
+}
+
+.abajo-frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 110%;
+  margin-top: 14%;
+}
